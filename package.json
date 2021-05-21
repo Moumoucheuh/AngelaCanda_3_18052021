@@ -1,0 +1,21 @@
+{
+  "name": "angelacanda_3_18052021",
+  "version": "1.0.0",
+  "description": "Formation OC Développeur Web - Projet Ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/styles.css --style compressed",
+    "prefix": "postcss ./public/css/styles.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moumoucheuh/AngelaCanda_3_18052021.git"
+  },
+  "author": "AngelaCanda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moumoucheuh/AngelaCanda_3_18052021/issues"
+  },
+  "homepage": "https://github.com/Moumoucheuh/AngelaCanda_3_18052021#readme",
+  "browserslist": "last 4 versions"
+}
