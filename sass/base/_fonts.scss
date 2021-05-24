@@ -2,7 +2,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1,
-h2 {
+.title {
+  font-family: "Roboto", sans-serif;
+  &--restauname {
+    font-family: "Shrikhand", cursive;
+  }
+}
+
+h3 {
   font-family: "Shrikhand", cursive;
 }

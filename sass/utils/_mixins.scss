@@ -1,0 +1,3 @@
+@mixin inserts-text($color: $tertiary-color) {
+  color: darken($color, 10%);
+}

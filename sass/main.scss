@@ -1,8 +1,17 @@
 @import "./base/fonts";
+@import "./base/colors";
+@import "./base/bases";
 
 @import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
+
+@import "./layout/header";
+@import "./layout/main_container";
+@import "./layout/footer";
+
+@import "./components/inserts";
+@import "./components/buttons";
 
 @import "./pages/index";
 @import "./pages/ALaFrancaise";

@@ -1,0 +1,20 @@
+.input {
+  background: linear-gradient($secondary-color, $primary-color);
+  border-radius: 30px;
+  border: none;
+  text-align: center;
+  color: $distinctive-text-color;
+  font-weight: bold;
+  height: 45px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+
+  &--search {
+    background-color: transparent;
+    color: black;
+    border: none;
+    text-align: center;
+    height: 45px;
+  }
+}
