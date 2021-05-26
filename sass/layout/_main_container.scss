@@ -1,5 +1,16 @@
 main {
   background-color: $main-background;
   margin: none;
-  padding-bottom: 60px;
+  padding-top: 10px;
+  padding-bottom: $padding-bottom;
+  & > .user-info {
+    background-color: $distinctive-color;
+    @include padding-container;
+  }
+  & > .restaurants {
+    @include padding-container;
+  }
+  & > form {
+    @include padding-container;
+  }
 }

@@ -1,20 +1,28 @@
 .input {
   background: linear-gradient($secondary-color, $primary-color);
-  border-radius: 30px;
+  border-radius: nth($radius, 3);
   border: none;
   text-align: center;
-  color: $distinctive-text-color;
-  font-weight: bold;
+  color: $distinctive-color;
+  font-weight: $bolder-font-weight;
   height: 45px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 50%;
   cursor: pointer;
+  display: block;
+  margin: auto;
+  box-shadow: $box-shadow;
 
   &--search {
     background-color: transparent;
-    color: black;
+    color: $darkened-background;
     border: none;
     text-align: center;
     height: 45px;
+    font-weight: $bolder-font-weight;
+    font-size: nth($font-size, 3);
+  }
+
+  &:active {
+    @include btn-hover;
   }
 }

@@ -1,14 +1,69 @@
+header hr {
+  margin: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(
+    darken($main-background, 15%),
+    darken($main-background, 3%)
+  );
+}
+
 .heading {
-  display: flex;
-
+  @include header;
   &__logo {
-    width: 50%;
-    align-self: center;
+    width: $logo-size;
   }
-
+  &__homelink {
+    float: left;
+    padding-top: 10px;
+  }
   &-index {
+    @include header;
+    &__logo {
+      width: $logo-size;
+    }
+  }
+}
+
+.form-citysearch {
+  text-align: $text-align;
+  background-color: $main-background;
+  padding-bottom: $padding-bottom;
+  &__userarea {
+    background-color: darken($main-background, 3%);
+  }
+  &__title {
+    margin: 40px 20px 0;
+    line-height: 1;
+    & p:first-child {
+      font-weight: $bolder-font-weight;
+      font-size: nth($font-size, 7);
+      margin-bottom: 0;
+    }
+    & p:nth-of-type(2) {
+      color: $darkened-background;
+      font-weight: $thinner-font-weight;
+      font-size: nth($font-size, 5);
+    }
   }
 }
 
 .banner {
+  height: 300px;
+  position: relative;
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+  &__title {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color: $main-background;
+    border-top-left-radius: nth($radius, 4);
+    border-top-right-radius: nth($radius, 4);
+  }
 }

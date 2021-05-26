@@ -1,5 +1,5 @@
-* {
-  max-width: 768px;
+body {
+  max-width: 100%;
 }
 
 a {
@@ -13,4 +13,19 @@ a {
 
 img {
   object-fit: cover;
+  width: 100%;
+}
+
+header i {
+  color: $darkened-background;
+}
+
+main i {
+  color: $darkened-background;
+  font-size: nth($font-size, 5);
+}
+
+h2 {
+  font-size: nth($font-size, 4);
+  font-weight: 400;
 }

@@ -1,8 +1,22 @@
 footer {
   background-color: $darkened-background;
-  color: $distinctive-text-color;
-}
-
-footer a {
-  color: $distinctive-text-color;
+  color: $distinctive-color;
+  padding: 25px;
+  & h3 {
+    margin-top: 0;
+    font-weight: normal;
+  }
+  & a {
+    color: $distinctive-color;
+  }
+  & i {
+    width: 15px;
+    padding-right: 15px;
+  }
+  & .nav {
+    padding-left: 0;
+    & > li {
+      line-height: 1.7;
+    }
+  }
 }

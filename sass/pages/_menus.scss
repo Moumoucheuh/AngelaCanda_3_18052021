@@ -1,0 +1,32 @@
+.menu {
+  font-weight: $bolder-font-weight;
+  margin-bottom: 45px;
+  &-title {
+    margin-bottom: 0;
+  }
+  &-suggestion {
+    @include card;
+    @include flexbox;
+    & div:first-child {
+      width: 90%;
+      margin: 10px;
+    }
+    &__add {
+      display: flex;
+      justify-content: space-between;
+      & label:first-child {
+        font-weight: $thinner-font-weight;
+        font-size: nth($font-size, 1);
+      }
+    }
+  }
+}
+
+hr {
+  float: left;
+  border: none;
+  background-color: $tertiary-color;
+  width: 12%;
+  height: 4px;
+  margin-bottom: 20px;
+}

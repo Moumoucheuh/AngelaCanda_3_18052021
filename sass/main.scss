@@ -1,10 +1,9 @@
-@import "./base/fonts";
-@import "./base/colors";
-@import "./base/bases";
-
 @import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
+
+@import "./base/fonts";
+@import "./base/bases";
 
 @import "./layout/header";
 @import "./layout/main_container";
@@ -14,7 +13,4 @@
 @import "./components/buttons";
 
 @import "./pages/index";
-@import "./pages/ALaFrancaise";
-@import "./pages/LaNoteEnchantee";
-@import "./pages/LaPaletteDuGout";
-@import "./pages/LeDeliceDesSens";
+@import "./pages/menus";

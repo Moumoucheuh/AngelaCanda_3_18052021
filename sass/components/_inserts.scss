@@ -1,9 +1,10 @@
 .restaurants-results__insert {
-  width: 40%;
-  height: 50px;
+  width: 30%;
+  height: 40px;
+  border-radius: nth($radius, 1);
   background-color: $tertiary-color;
-  color: darken($tertiary-color, 35%);
-  font-weight: bold;
+  color: darken($tertiary-color, 40%);
+  font-weight: $bolder-font-weight;
   text-align: center;
-  line-height: 50px;
+  line-height: 40px;
 }

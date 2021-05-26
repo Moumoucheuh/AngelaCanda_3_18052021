@@ -1,0 +1,68 @@
+.user-info {
+  padding-top: 15px;
+  padding-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  &__step {
+    align-self: flex-end;
+    position: relative;
+    background-color: $main-background;
+    height: 70px;
+    @include box-radius-shadow;
+    @include flexbox;
+    width: 95%;
+    margin-bottom: 30px;
+    > p:first-child {
+      color: $distinctive-color;
+      background-color: $primary-color;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      text-align: $text-align;
+      position: absolute;
+      top: 10px;
+      left: -10px;
+      margin-right: 10px;
+    }
+    > p:nth-child(2) {
+      text-align: $text-align;
+      width: 85%;
+      font-weight: $bolder-font-weight;
+    }
+  }
+  & i {
+    margin-right: 4%;
+    color: lighten($darkened-background, 30%);
+  }
+}
+
+.restaurants {
+  padding-top: 30px;
+  &-results {
+    position: relative;
+    @include card;
+    &__image {
+      border-top-left-radius: nth($radius, 2);
+      border-top-right-radius: nth($radius, 2);
+      height: 170px;
+    }
+    &__insert {
+      position: absolute;
+      top: 5px;
+      right: 15px;
+    }
+    &__info {
+      @include flexbox;
+      padding: 0 20px;
+      &__nameloc {
+        line-height: 0.5;
+        & p {
+          font-size: nth($font-size, 2);
+        }
+      }
+    }
+    & h2 {
+      font-weight: $bolder-font-weight;
+    }
+  }
+}
