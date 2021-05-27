@@ -22,7 +22,7 @@
     font-size: nth($font-size, 3);
   }
 
-  &:active {
+  &:hover {
     @include btn-hover;
   }
 }

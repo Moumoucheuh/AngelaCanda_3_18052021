@@ -34,3 +34,12 @@
   box-shadow: nth($box-shadow, 1) nth($box-shadow, 2) nth($box-shadow, 3)
     nth($box-shadow, 4) darken(nth($box-shadow, 5), 30%);
 }
+
+@mixin loader-settings {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

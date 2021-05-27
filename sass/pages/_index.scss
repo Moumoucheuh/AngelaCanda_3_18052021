@@ -1,3 +1,21 @@
+.loader-wrapper {
+  background-color: $darkened-background;
+  opacity: 0.6;
+  @include loader-settings;
+  animation: page-display 0s ease-in 2s forwards;
+  &__spinner {
+    @include loader-settings;
+    width: 100px;
+    height: 100px;
+    border-top: 10px dotted $tertiary-color;
+    border-bottom: 10px dotted $tertiary-color;
+    border-left: 10px dotted $secondary-color;
+    border-right: 10px dotted $primary-color;
+    border-radius: 50%;
+    animation: loading-spinner 2s linear infinite;
+  }
+}
+
 .user-info {
   padding-top: 15px;
   padding-bottom: 45px;
