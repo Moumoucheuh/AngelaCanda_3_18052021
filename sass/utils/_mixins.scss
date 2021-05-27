@@ -1,7 +1,10 @@
+/* general pages'layout */
 @mixin padding-container {
   padding-left: 5%;
   padding-right: 5%;
 }
+
+/* elements'setting */
 @mixin box-radius-shadow {
   border-radius: nth($radius, 2);
   box-shadow: $box-shadow;
@@ -26,6 +29,7 @@
   align-items: $align;
 }
 
+/*components */
 @mixin btn-hover {
   background: linear-gradient(
     lighten($secondary-color, 7%),
@@ -35,9 +39,36 @@
     nth($box-shadow, 4) darken(nth($box-shadow, 5), 30%);
 }
 
+/* MediaQueries */
+@mixin mobile-small-screen {
+  @media screen and (max-width: map-get($breakpoints, mobile-small-screen)) {
+    @content;
+  }
+}
+
+@mixin mobile-large-screen {
+  @media screen and (min-width: map-get($breakpoints, mobile-large-screen)) and (max-width: map-get($breakpoints, tablette)) {
+    @content;
+  }
+}
+
+@mixin tablette {
+  @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}
+
+/* animation elements' setting */
 @mixin loader-settings {
+  z-index: 1;
   margin: auto;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;

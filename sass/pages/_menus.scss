@@ -1,12 +1,17 @@
 .menu {
   font-weight: $bolder-font-weight;
   margin-bottom: 45px;
+  @include desktop {
+    width: 100%;
+  }
   &-title {
     margin-bottom: 0;
   }
   &-suggestion {
     @include card;
     @include flexbox;
+    @include desktop {
+    }
     & div:first-child {
       width: 90%;
       margin: 10px;

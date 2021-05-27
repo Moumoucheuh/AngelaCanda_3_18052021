@@ -12,6 +12,10 @@ header hr {
   @include header;
   &__logo {
     width: $logo-size;
+
+    @include desktop {
+      width: 40%;
+    }
   }
   &__homelink {
     float: left;
@@ -21,6 +25,9 @@ header hr {
     @include header;
     &__logo {
       width: $logo-size;
+      @include desktop {
+        width: 40%;
+      }
     }
   }
 }
@@ -51,6 +58,9 @@ header hr {
 .banner {
   height: 300px;
   position: relative;
+  @include desktop {
+    height: 550px;
+  }
   &__image {
     width: 100%;
     height: 100%;

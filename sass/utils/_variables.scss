@@ -6,7 +6,7 @@ $distinctive-color: white;
 $main-background: #f6f6f6;
 $darkened-background: #353535;
 
-$font-size: 13px 15px 17px 18px 20px 25px 30px;
+$font-size: 13px 15px 17px 18px 20px 25px 30px 48px;
 
 $radius: 4px 15px 30px 35px;
 $box-shadow: 1px 2px 6px 3px darken($main-background, 10%);
@@ -19,3 +19,10 @@ $logo-size: 50%;
 
 $thinner-font-weight: 300;
 $bolder-font-weight: bold;
+
+$breakpoints: (
+  mobile-small-screen: 360px,
+  mobile-large-screen: 600px,
+  tablette: 768px,
+  desktop: 1200px,
+);

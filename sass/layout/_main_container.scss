@@ -3,6 +3,10 @@ main {
   margin: none;
   padding-top: 10px;
   padding-bottom: $padding-bottom;
+  @include desktop {
+    display: flex;
+    justify-content: center;
+  }
   & > .user-info {
     background-color: $distinctive-color;
     @include padding-container;

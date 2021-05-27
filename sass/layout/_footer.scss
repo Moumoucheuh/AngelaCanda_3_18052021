@@ -2,9 +2,18 @@ footer {
   background-color: $darkened-background;
   color: $distinctive-color;
   padding: 25px;
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+  }
   & h3 {
     margin-top: 0;
     font-weight: normal;
+    @include desktop {
+      font-size: nth($font-size, 8);
+      padding-left: 15px;
+      width: 30%;
+    }
   }
   & a {
     color: $distinctive-color;
@@ -15,8 +24,15 @@ footer {
   }
   & .nav {
     padding-left: 0;
+    @include desktop {
+      font-size: nth($font-size, 6);
+    }
     & > li {
       line-height: 1.7;
+      @include desktop {
+        display: inline-block;
+        padding-right: 30px;
+      }
     }
   }
 }

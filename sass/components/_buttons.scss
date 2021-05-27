@@ -25,4 +25,8 @@
   &:hover {
     @include btn-hover;
   }
+
+  @include desktop {
+    width: 20%;
+  }
 }
