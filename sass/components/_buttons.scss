@@ -1,4 +1,4 @@
-.input {
+.btn {
   background: linear-gradient($secondary-color, $primary-color);
   border-radius: nth($radius, 3);
   border: none;
@@ -11,13 +11,35 @@
   display: block;
   margin: auto;
   box-shadow: $box-shadow;
-  transition: all 450ms;
+  position: relative;
+  z-index: 1;
   @include mobile-small-screen {
     width: auto;
   }
   @include desktop {
     width: 20%;
   }
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+  &::after {
+    content: "";
+    border-radius: nth($radius, 3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    @include btn-hover;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 250ms;
+  }
+}
+
+.input {
   &--search {
     background-color: transparent;
     color: $darkened-background;
@@ -26,8 +48,5 @@
     height: 45px;
     font-weight: $bolder-font-weight;
     font-size: nth($font-size, 3);
-  }
-  &:hover {
-    @include btn-hover;
   }
 }
