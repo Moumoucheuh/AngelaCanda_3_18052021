@@ -2,16 +2,12 @@ main {
   background-color: $main-background;
   margin: none;
   padding-top: 10px;
-  padding-bottom: $padding-bottom;
-  @include desktop {
-    display: flex;
-    justify-content: center;
-  }
-  & > .user-info {
+  padding-bottom: nth($padding, 2);
+  & > .functioning {
     background-color: $distinctive-color;
     @include padding-container;
   }
-  & > .restaurants {
+  & > .research-results {
     @include padding-container;
   }
   & > form {

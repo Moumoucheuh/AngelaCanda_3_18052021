@@ -11,7 +11,13 @@
   display: block;
   margin: auto;
   box-shadow: $box-shadow;
-
+  transition: all 450ms;
+  @include mobile-small-screen {
+    width: auto;
+  }
+  @include desktop {
+    width: 20%;
+  }
   &--search {
     background-color: transparent;
     color: $darkened-background;
@@ -21,12 +27,7 @@
     font-weight: $bolder-font-weight;
     font-size: nth($font-size, 3);
   }
-
   &:hover {
     @include btn-hover;
-  }
-
-  @include desktop {
-    width: 20%;
   }
 }

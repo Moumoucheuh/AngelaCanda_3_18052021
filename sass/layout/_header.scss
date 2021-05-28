@@ -12,22 +12,15 @@ header hr {
   @include header;
   &__logo {
     width: $logo-size;
-
     @include desktop {
-      width: 40%;
+      width: 20%;
     }
   }
   &__homelink {
     float: left;
     padding-top: 10px;
-  }
-  &-index {
-    @include header;
-    &__logo {
-      width: $logo-size;
-      @include desktop {
-        width: 40%;
-      }
+    @include desktop {
+      font-size: nth($font-size, 7);
     }
   }
 }
@@ -35,7 +28,7 @@ header hr {
 .form-citysearch {
   text-align: $text-align;
   background-color: $main-background;
-  padding-bottom: $padding-bottom;
+  padding-bottom: nth($padding, 2);
   &__userarea {
     background-color: darken($main-background, 3%);
   }
@@ -75,5 +68,32 @@ header hr {
     background-color: $main-background;
     border-top-left-radius: nth($radius, 4);
     border-top-right-radius: nth($radius, 4);
+    @include mobile-large-screen {
+      justify-content: flex-start;
+    }
+    @include tablette-only {
+      justify-content: center;
+      font-size: 40px;
+    }
+    @include desktop {
+      justify-content: flex-start;
+      font-size: 40px;
+    }
+    & > h1 {
+      @include mobile-large-screen {
+        width: 45%;
+        padding-left: 5%;
+      }
+      @include tablette-only {
+        width: 50%;
+        padding-left: 5%;
+        font-size: 40px;
+      }
+      @include desktop {
+        width: 35%;
+        padding-left: 5%;
+        font-size: 40px;
+      }
+    }
   }
 }

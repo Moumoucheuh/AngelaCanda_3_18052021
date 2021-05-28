@@ -47,13 +47,19 @@
 }
 
 @mixin mobile-large-screen {
-  @media screen and (min-width: map-get($breakpoints, mobile-large-screen)) and (max-width: map-get($breakpoints, tablette)) {
+  @media screen and (min-width: map-get($breakpoints, mobile-large-screen)) {
     @content;
   }
 }
 
 @mixin tablette {
-  @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: map-get($breakpoints, desktop)) {
+  @media screen and (min-width: map-get($breakpoints, tablette)) {
+    @content;
+  }
+}
+
+@mixin tablette-only {
+  @media screen and (min-width: map-get($breakpoints, tablette)) and (max-width: 1199px) {
     @content;
   }
 }

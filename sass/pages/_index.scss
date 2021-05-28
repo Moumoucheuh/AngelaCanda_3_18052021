@@ -9,7 +9,7 @@
     width: 70px;
     height: 70px;
     border: 8px dotted $tertiary-color;
-    border-radius: 50%;
+    border-radius: nth($radius, 5);
     animation: loading-spinner 3s linear infinite;
   }
   &__spinner-reverse {
@@ -17,32 +17,50 @@
     width: 50px;
     height: 50px;
     border: 8px dotted $primary-color;
-    border-radius: 50%;
+    border-radius: nth($radius, 5);
     animation: loading-spinner reverse 2s linear infinite;
   }
 }
 
-.user-info {
-  padding-top: 15px;
-  padding-bottom: 60px;
+.main--index {
+  @include desktop {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.functioning {
+  padding-top: nth($padding, 1);
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   @include desktop {
     width: 25%;
   }
-  &__step {
+  &-details {
     align-self: flex-end;
+    width: 95%;
+    @include tablette-only {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &-details__step {
     position: relative;
     background-color: $main-background;
     height: 70px;
     @include box-radius-shadow;
     @include flexbox;
-    width: 95%;
     margin-bottom: 30px;
+    @include tablette-only {
+      width: 30%;
+    }
     > p:first-child {
       color: $distinctive-color;
       background-color: $primary-color;
-      border-radius: 50%;
+      border-radius: nth($radius, 5);
       width: 20px;
       height: 20px;
       text-align: $text-align;
@@ -55,6 +73,10 @@
       text-align: $text-align;
       width: 85%;
       font-weight: $bolder-font-weight;
+      @include tablette {
+        font-size: 12px;
+        width: 90%;
+      }
     }
   }
   & i {
@@ -63,24 +85,28 @@
   }
 }
 
-.restaurants {
-  padding-top: 15px;
+.research-results {
+  padding-top: nth($padding, 1);
   @include desktop {
     width: 55%;
     display: flex;
     flex-direction: column;
   }
-  & div:last-child {
-    @include desktop {
-      display: flex;
-      flex-flow: row wrap;
-      margin: 0;
-    }
+}
+
+.restaurants {
+  @include mobile-large-screen {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
   }
   &-results {
     position: relative;
     @include card;
-    @include desktop {
+    @include mobile-large-screen {
+      width: 48%;
+    }
+    @include tablette {
       width: 40%;
     }
     &__image {
