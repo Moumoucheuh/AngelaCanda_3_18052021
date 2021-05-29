@@ -26,3 +26,8 @@ $breakpoints: (
   tablette: 768px,
   desktop: 1200px,
 );
+
+/* animations'variables */
+$nb-suggestions: 13;
+$anim-duration: 500ms;
+$anim-delay: $anim-duration / $nb-suggestions;
