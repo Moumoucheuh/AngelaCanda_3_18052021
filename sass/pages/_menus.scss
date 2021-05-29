@@ -16,7 +16,7 @@
 .menu {
   font-weight: $bolder-font-weight;
   margin-bottom: 45px;
-  animation: gradualy-appearing linear 10s;
+  /*  animation: gradualy-appearing linear 300ms; */
   @include desktop {
     width: 30%;
   }
@@ -26,17 +26,19 @@
   &-suggestion {
     @include card;
     @include flexbox;
-    & div:first-child {
-      width: 90%;
-      margin: 10px;
-    }
     &__add {
       display: flex;
-      & label:first-child {
-        flex: 2;
+      flex-direction: column;
+      width: 90%;
+      margin: 10px;
+      & label:nth-child(2) {
         font-weight: $thinner-font-weight;
         font-size: nth($font-size, 1);
       }
+    }
+    &__display {
+      display: none;
+      margin-right: 10px;
     }
   }
 }
