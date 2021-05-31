@@ -1,0 +1,23 @@
+.heart-icon {
+  position: relative;
+  & > .fas.fa-heart {
+    display: none;
+  }
+
+  &:hover {
+    & > .fas.fa-heart {
+      z-index: 1;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      position: absolute;
+      display: inline-block;
+      content: "\f004";
+      background: linear-gradient($primary-color, $secondary-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: heart ease-in-out 1500ms forwards;
+    }
+  }
+}
