@@ -13,6 +13,7 @@
     }
   }
 }
+
 .menu {
   font-weight: $bolder-font-weight;
   margin-bottom: 45px;
@@ -23,6 +24,8 @@
     margin-bottom: 0;
   }
   &-suggestion {
+    position: relative;
+    overflow: hidden;
     opacity: 0;
     animation: gradualy-appearing $anim-duration both
       cubic-bezier(0.35, 0.3, 0.25, 1);
@@ -32,20 +35,56 @@
       }
     }
     @include card;
-    @include flexbox;
-    &__add {
-      display: flex;
-      flex-direction: column;
-      width: 90%;
-      margin: 10px;
+    @include flexbox($align: none);
+    & div:first-child {
+      display: block;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      padding: 10px;
       & label:nth-child(2) {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         font-weight: $thinner-font-weight;
         font-size: nth($font-size, 1);
       }
     }
-    &__display {
-      display: none;
-      margin-right: 10px;
+    &__price {
+      margin-right: 10%;
+      align-self: flex-end;
+      padding-bottom: 10px;
+    }
+    &__btn {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      right: -3%;
+      top: 0;
+      bottom: 0;
+      transform: scale(0);
+      width: 20%;
+      border-top-right-radius: nth($radius, 2);
+      border-bottom-right-radius: nth($radius, 2);
+      background-color: $tertiary-color;
+      i {
+        color: $distinctive-color;
+      }
+    }
+    &:hover {
+      .menu-suggestion__add {
+        animation: motion-meal 600ms forwards;
+      }
+      .menu-suggestion__btn {
+        animation: meal-selection 1s forwards;
+      }
+      i {
+        animation: radio-btn 1s linear;
+      }
+      .menu-suggestion__price {
+        animation: motion 900ms ease forwards;
+      }
     }
   }
 }

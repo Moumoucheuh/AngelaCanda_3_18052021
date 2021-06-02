@@ -39,14 +39,7 @@
   }
 }
 
-.input {
-  &--search {
-    background-color: transparent;
-    color: $darkened-background;
-    border: none;
-    text-align: center;
-    height: 45px;
-    font-weight: $bolder-font-weight;
-    font-size: nth($font-size, 3);
-  }
+/* radio button for meals' selection */
+input[type="radio"] {
+  visibility: hidden;
 }

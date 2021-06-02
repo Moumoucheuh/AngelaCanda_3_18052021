@@ -6,6 +6,7 @@
       content: "\f004";
       font-weight: 900;
       background: linear-gradient($primary-color, $secondary-color);
+      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       animation: heart ease-in-out 1500ms forwards;

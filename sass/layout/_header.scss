@@ -25,6 +25,18 @@ header hr {
   }
 }
 
+.input {
+  &--search {
+    background-color: transparent;
+    color: $darkened-background;
+    border: none;
+    text-align: center;
+    height: 45px;
+    font-weight: $bolder-font-weight;
+    font-size: nth($font-size, 3);
+  }
+}
+
 .form-citysearch {
   text-align: $text-align;
   background-color: $main-background;

@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/b736d119f0.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&hanging-points=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/public/css/styles.css">
     <title>Ohmyfood</title>
 </head>
@@ -25,10 +25,7 @@
             <img src="public/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" class="banner__image" alt="La note enchantée" />
             <div class="banner__title">
                 <h1 class="title--restauname">La note enchantée</h1>
-                <div class="banner__title">
-                    <h1 class="title--restauname">À la française</h1>
-                    <i class="far fa-heart"></i>
-                </div>
+                <i class="far fa-heart"></i>
             </div>
         </div>
     </header>
@@ -42,42 +39,50 @@
 
                     <div class="menu-suggestion menu-suggestion--1">
                         <div class="menu-suggestion__add">
-                            <label for="appetizer1" class="">Ravioles de foie gras</label>
+                            <label for="appetizer1"></label>Ravioles de foie gras</label>
                             <label for="appetizer1">Accompagnés de leur crème à la truffe</label>
                         </div>    
-                        <label class="menu-suggestion__display">...</label>         
-                        <label for="appetizer1">25€</label>
-                        <input type="radio" name="appetizer" value="" id="appetizer1" class="" />
+                        <label for="appetizer1" class="menu-suggestion__price">25€</label>
+                        <div class="menu-suggestion__btn">
+                            <input type="radio" name="appetizer" value="" id="appetizer1" />
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div> 
 
                     <div class="menu-suggestion menu-suggestion--2">
                         <div class="menu-suggestion__add">
-                            <label for="appetizer2" class="">Caviar osciètre</label>
+                            <label for="appetizer2">Caviar osciètre</label>
                             <label for="appetizer2">Sur blini à la farine de blé noir</label>
                         </div>    
-                        <label class="menu-suggestion__display">...</label>  
-                        <label for="appetizer2">35€</label>
-                        <input type="radio" name="appetizer" value="" id="appetizer2" class="" />
+                        <label for="appetizer2" class="menu-suggestion__price">35€</label>
+                        <div class="menu-suggestion__btn">    
+                            <input type="radio" name="appetizer" value="" id="appetizer2" />
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div>
 
                     <div class="menu-suggestion menu-suggestion--3">
                         <div class="menu-suggestion__add">
-                            <label for="appetizer3" class="">Homard et espuma de potiron</label>
+                            <label for="appetizer3">Homard et espuma de potiron</label>
                             <label for="appetizer3">Mariné aux zestes d'orange</label>
                         </div>    
-                        <label class="menu-suggestion__display">...</label> 
-                        <label for="appetizer3">20€</label>
-                        <input type="radio" name="appetizer" value="" id="appetizer3" class="" />
+                        <label for="appetizer3" class="menu-suggestion__price">20€</label>
+                        <div class="menu-suggestion__btn">
+                            <input type="radio" name="appetizer" value="" id="appetizer3" />
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div>
                 
                     <div class="menu-suggestion menu-suggestion--4">
                         <div class="menu-suggestion__add">
-                            <label for="appetizer4" class="">Foie gras de canard cuit entier</label>
+                            <label for="appetizer4">Foie gras de canard cuit entier</label>
                             <label for="appetizer4">Confiture de figue et pain toasté</label>
                         </div>    
-                        <label class="menu-suggestion__display">...</label>
-                        <label for="appetizer4">35€</label>
-                        <input type="radio" name="appetizer" value="" id="appetizer4" class="" />
+                        <label for="appetizer4" class="menu-suggestion__price">35€</label>
+                        <div class="menu-suggestion__btn">
+                            <input type="radio" name="appetizer" value="" id="appetizer4" />
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div>
                 </div>
 
@@ -90,9 +95,11 @@
                             <label for="meal1">Noix de coquilles Saint-Jacques</label>
                             <label for="meal1">Sur lit de purée de céleri-rave</label>
                         </div>    
-                        <label class="menu-suggestion__display">...</label> 
-                        <label for="meal1">40€</label>
-                        <input type="radio" name="meal" id="meal1" value="" />
+                        <label for="meal1" class="menu-suggestion__price">40€</label>
+                        <div class="menu-suggestion__btn">
+                            <input type="radio" name="meal" id="meal1" value="" />
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div>
 
                     <div class="menu-suggestion menu-suggestion--6">
@@ -100,9 +107,11 @@
                             <label for="meal2">Langoustine poêlée</label>
                             <label for="meal2">Purée de patate douce</label>
                         </div>    
-                        <label class="menu-suggestion__display">...</label>    
-                        <label for="meal2">35€</label>
-                        <input type="radio" name="meal" id="meal2" value="" />
+                        <label for="meal2" class="menu-suggestion__price">35€</label>
+                        <div class="menu-suggestion__btn">
+                            <input type="radio" name="meal" id="meal2" value="" />
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div>
 
                     <div class="menu-suggestion menu-suggestion--7">
@@ -110,9 +119,11 @@
                             <label for="meal3">Mijoté de queue de boeuf</label>
                             <label for="meal3">Et riz sauvage aux zestes de citron</label>
                         </div>    
-                        <label class="menu-suggestion__display">...</label>  
-                        <label for="meal3">44€</label>
-                        <input type="radio" name="meal" id="meal3" value="" />
+                        <label for="meal3" class="menu-suggestion__price">44€</label>
+                        <div class="menu-suggestion__btn">
+                            <input type="radio" name="meal" id="meal3" value="" />
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div>
                 </div>
 
@@ -125,9 +136,11 @@
                             <label for="dessert1">Macaron noisette et chocolat</label>
                             <label for="dessert1">Glace au caramel brun et sel de Guérande</label>
                         </div>    
-                        <label class="menu-suggestion__display">...</label> 
-                        <label for="dessert1">18€</label>
-                        <input type="radio" name="dessert" id="dessert1" value="" />
+                        <label for="dessert1" class="menu-suggestion__price">18€</label>
+                        <div class="menu-suggestion__btn">
+                            <input type="radio" name="dessert" id="dessert1" value="" />
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div>
 
                     <div class="menu-suggestion menu-suggestion--9">
@@ -135,8 +148,7 @@
                             <label for="dessert2">Baba au rhum revisité </label>
                             <label for="dessert2">Avec son coulis de citron</label>
                         </div>    
-                        <label class="menu-suggestion__display">...</label>  
-                        <label for="dessert2">22€</label>
+                        <label for="dessert2" class="menu-suggestion__price">22€</label>
                         <input type="radio" name="dessert" id="dessert2" value="" />
                     </div>
 
@@ -145,9 +157,11 @@
                             <label for="dessert3">Tarte au citron meringuée </label>
                             <label for="dessert3">Déstructurée</label>
                         </div>    
-                        <label class="menu-suggestion__display">...</label>
-                        <label for="dessert3">23€</label>
-                        <input type="radio" name="dessert" id="dessert3" value="" />
+                        <label for="dessert3" class="menu-suggestion__price">23€</label>
+                        <div class="menu-suggestion__btn">
+                            <input type="radio" name="dessert" id="dessert3" value="" />
+                            <i class="fas fa-check-circle"></i>
+                        </div>
                     </div>
                 </div>
             </div>
