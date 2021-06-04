@@ -48,13 +48,9 @@
 }
 
 @keyframes meal-selection {
-  from {
-    transform-origin: right;
-    transform: scaleX(0);
-  }
-
   to {
-    transform: scaleX(1);
+    transform-origin: left;
+    transform: translateX(-100%);
   }
 }
 
@@ -72,13 +68,8 @@
     transform-origin: right;
     transform: translateX(0);
   }
-
-  50% {
-    opacity: 1;
-  }
-
   100% {
-    transform: translateX(-50px);
+    transform: translateX(-70px);
     opacity: 1;
   }
 }

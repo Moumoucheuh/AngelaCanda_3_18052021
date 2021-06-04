@@ -58,18 +58,17 @@
     }
     &__btn {
       position: nth($position, 2);
-      display: nth($display, 1);
-      align-items: center;
-      right: -3%;
+      @include flexbox($justify-content: center);
+      right: -20%;
       top: 0;
       bottom: 0;
-      transform: scale(0);
       width: 20%;
       border-top-right-radius: nth($radius, 2);
       border-bottom-right-radius: nth($radius, 2);
       background-color: $tertiary-color;
       i {
         color: $distinctive-color;
+        position: nth($position, 2);
       }
     }
     &:hover {
