@@ -77,11 +77,17 @@
         font-size: 12px;
         width: 90%;
       }
+      @include mobile-small-screen {
+        margin: auto;
+      }
     }
   }
   & i {
     margin-right: 4%;
     color: lighten($darkened-background, 30%);
+    @include mobile-small-screen {
+      display: none;
+    }
   }
 }
 
