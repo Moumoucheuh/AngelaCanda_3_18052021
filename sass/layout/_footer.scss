@@ -3,14 +3,13 @@ footer {
   color: $distinctive-color;
   padding: 25px;
   @include desktop {
-    display: flex;
-    align-items: baseline;
+    @include flexbox($justify-content: flex-start, $align: baseline);
   }
   & h3 {
     margin-top: 0;
     font-weight: normal;
     @include desktop {
-      font-size: nth($font-size, 8);
+      font-size: nth($font-size, 9);
       padding-left: nth($padding, 1);
       width: 30%;
     }
@@ -30,7 +29,7 @@ footer {
     & > li {
       line-height: 1.7;
       @include tablette {
-        display: inline-block;
+        display: nth($display, 3);
         padding-right: 30px;
       }
     }

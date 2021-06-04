@@ -5,6 +5,6 @@
   background-color: $tertiary-color;
   color: darken($tertiary-color, 40%);
   font-weight: $bolder-font-weight;
-  text-align: center;
+  text-align: $text-align;
   line-height: 40px;
 }

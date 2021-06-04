@@ -38,12 +38,12 @@
 
 @keyframes heart {
   0% {
-    transform: scale(20%);
+    transform: scale(0.2);
     transform-origin: bottom;
   }
 
   100% {
-    transform: scale(85%);
+    transform: scale(0.85);
   }
 }
 

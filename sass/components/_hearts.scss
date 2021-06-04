@@ -1,5 +1,5 @@
 .far.fa-heart {
-  position: relative;
+  position: nth($position, 1);
   &:hover {
     &::after {
       font-family: "Font Awesome 5 Free";
@@ -10,11 +10,7 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       animation: heart ease-in-out 1500ms forwards;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
+      @include positioning;
     }
   }
 }

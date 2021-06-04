@@ -23,10 +23,23 @@
   margin: 20px 0;
 }
 
-@mixin flexbox($justify-content: space-between, $align: center) {
-  display: flex;
+@mixin flexbox(
+  $direction: row,
+  $justify-content: space-between,
+  $align: center
+) {
+  display: nth($display, 1);
+  flex-direction: $direction;
   justify-content: $justify-content;
   align-items: $align;
+}
+
+@mixin positioning {
+  position: nth($position, 2);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 /*components */

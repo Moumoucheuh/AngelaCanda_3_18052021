@@ -23,7 +23,7 @@
 
 .main--index {
   @include desktop {
-    display: flex;
+    display: nth($display, 1);
     justify-content: center;
   }
 }
@@ -31,8 +31,11 @@
 .functioning {
   padding-top: nth($padding, 1);
   padding-bottom: 40px;
-  display: flex;
-  flex-direction: column;
+  @include flexbox(
+    $direction: column,
+    $justify-content: flex-start,
+    $align: flex-start
+  );
   @include desktop {
     width: 25%;
   }
@@ -41,13 +44,11 @@
     width: 95%;
     @include tablette-only {
       width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      @include flexbox;
     }
   }
   &-details__step {
-    position: relative;
+    position: nth($position, 1);
     background-color: $main-background;
     height: 70px;
     @include box-radius-shadow;
@@ -63,7 +64,7 @@
       width: 20px;
       height: 20px;
       text-align: $text-align;
-      position: absolute;
+      position: nth($position, 2);
       top: 10px;
       left: -10px;
       margin-right: 10px;
@@ -88,19 +89,19 @@
   padding-top: nth($padding, 1);
   @include desktop {
     width: 55%;
-    display: flex;
+    display: nth($display, 1);
     flex-direction: column;
   }
 }
 
 .restaurants {
   @include mobile-large-screen {
-    display: flex;
-    flex-flow: row wrap;
+    @include flexbox;
+    flex-wrap: wrap;
     margin: 0;
   }
   &-results {
-    position: relative;
+    position: nth($position, 1);
     @include card;
     @include mobile-large-screen {
       width: 48%;
@@ -114,7 +115,7 @@
       height: 170px;
     }
     &__insert {
-      position: absolute;
+      position: nth($position, 2);
       top: 5px;
       right: 15px;
     }
