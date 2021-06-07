@@ -76,8 +76,12 @@
         animation: motion-meal 600ms forwards;
       }
       .menu-suggestion__btn {
-        animation: meal-selection 700ms both;
+        animation: meal-selection 700ms forwards;
+        & input[type="radio"]:checked {
+          animation-play-state: paused;
+        }
       }
+
       i {
         animation: radio-btn 600ms linear;
       }
