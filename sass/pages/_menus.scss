@@ -77,9 +77,9 @@
       }
       .menu-suggestion__btn {
         animation: meal-selection 700ms forwards;
-        & input[type="radio"]:checked {
+        /*& input[type="radio"]:checked {
           animation-play-state: paused;
-        }
+        }*/
       }
 
       i {
