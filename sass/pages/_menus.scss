@@ -34,9 +34,6 @@
     @include desktop {
       font-size: nth($font-size, 8);
     }
-    @include desktop-large-screen {
-      max-width: map-get($breakpoints, desktop-large-screen);
-    }
     & > h1 {
       @include mobile-large-screen {
         width: 45%;
@@ -50,6 +47,11 @@
       @include desktop {
         width: 35%;
         font-size: nth($font-size, 8);
+      }
+      @include desktop-large-screen {
+        max-width: 25%;
+        width: auto;
+        margin-right: 3%;
       }
     }
   }
