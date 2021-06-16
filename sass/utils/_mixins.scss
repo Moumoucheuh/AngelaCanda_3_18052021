@@ -83,6 +83,11 @@
   }
 }
 
+@mixin desktop-large-screen {
+  @media screen and (min-width: map-get($breakpoints, desktop-large-screen)) {
+    @content;
+  }
+}
 /* animation elements' setting */
 @mixin loader-settings {
   z-index: 2;
