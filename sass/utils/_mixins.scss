@@ -45,11 +45,11 @@
 /*components */
 @mixin btn-hover {
   background: linear-gradient(
-    lighten($secondary-color, 7%),
-    lighten($primary-color, 7%)
+    lighten($secondary-color, 3%),
+    lighten($primary-color, 3%)
   );
-  box-shadow: nth($box-shadow, 1) nth($box-shadow, 2) nth($box-shadow, 3)
-    nth($box-shadow, 4) darken(nth($box-shadow, 5), 30%);
+  box-shadow: nth($box-shadow, 1) nth($box-shadow, 1) nth($box-shadow, 3)
+    nth($box-shadow, 1) darken(nth($box-shadow, 5), 20%);
 }
 
 /* MediaQueries */

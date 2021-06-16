@@ -10,7 +10,7 @@ footer {
     font-weight: normal;
     @include desktop {
       font-size: nth($font-size, 9);
-      padding-left: nth($padding, 1);
+      padding-left: nth($padding, 2);
       width: 30%;
     }
   }
@@ -19,7 +19,7 @@ footer {
   }
   & i {
     width: 15px;
-    padding-right: nth($padding, 1);
+    padding-right: nth($padding, 2);
   }
   & .nav {
     padding-left: 0;

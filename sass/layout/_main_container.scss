@@ -1,16 +1,13 @@
 main {
   background-color: $main-background;
   margin: 0;
-  padding-top: 10px;
-  padding-bottom: nth($padding, 2);
-  & > .functioning {
-    background-color: $distinctive-color;
-    @include padding-container;
-  }
-  & > .research-results {
-    @include padding-container;
-  }
-  & > form {
-    @include padding-container;
+  padding-top: nth($padding, 1);
+  padding-bottom: nth($padding, 3);
+}
+
+.main--index {
+  @include desktop {
+    display: nth($display, 1);
+    justify-content: center;
   }
 }

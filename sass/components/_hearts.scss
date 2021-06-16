@@ -1,4 +1,5 @@
 .far.fa-heart {
+  cursor: pointer;
   position: nth($position, 1);
   &:hover {
     &::after {
