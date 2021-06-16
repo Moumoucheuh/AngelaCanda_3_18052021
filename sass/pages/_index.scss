@@ -21,6 +21,56 @@
   }
 }
 
+header hr {
+  margin: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(
+    darken($main-background, 15%),
+    darken($main-background, 3%)
+  );
+}
+
+.search {
+  background-color: transparent;
+  color: $darkened-background;
+  border: none;
+  text-align: $text-align;
+  height: 45px;
+  font-weight: $bolder-font-weight;
+  font-size: nth($font-size, 3);
+}
+
+.form-citysearch {
+  text-align: $text-align;
+  background-color: $main-background;
+  padding-bottom: nth($padding, 3);
+  &__userarea {
+    background-color: darken($main-background, 3%);
+  }
+  &__title {
+    margin: 40px 20px 0;
+    line-height: 1;
+    & p:first-child {
+      font-weight: $bolder-font-weight;
+      font-size: nth($font-size, 7);
+      margin-bottom: 0;
+    }
+    & p:nth-of-type(2) {
+      color: $darkened-background;
+      font-weight: $thinner-font-weight;
+      font-size: nth($font-size, 5);
+    }
+  }
+}
+
+.main--index {
+  @include desktop {
+    display: nth($display, 1);
+    justify-content: center;
+  }
+}
+
 .functioning {
   background-color: $distinctive-color;
   @include padding-container;

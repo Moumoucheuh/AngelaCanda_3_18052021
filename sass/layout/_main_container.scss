@@ -4,10 +4,3 @@ main {
   padding-top: nth($padding, 1);
   padding-bottom: nth($padding, 3);
 }
-
-.main--index {
-  @include desktop {
-    display: nth($display, 1);
-    justify-content: center;
-  }
-}
