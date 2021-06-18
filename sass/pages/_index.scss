@@ -102,6 +102,12 @@ header hr {
     @include tablette-only {
       width: 30%;
     }
+    &:hover {
+      background: lighten($primary-color, 35%);
+      & .fas {
+        color: $primary-color;
+      }
+    }
     > p:first-child {
       color: $distinctive-color;
       background-color: $primary-color;
@@ -126,9 +132,6 @@ header hr {
         margin: auto;
       }
     }
-    &--distinctive {
-      background: lighten($primary-color, 35%);
-    }
   }
   & .fas {
     margin-right: 4%;
@@ -136,9 +139,6 @@ header hr {
     @include mobile-small-screen {
       display: none;
     }
-  }
-  & .fa-store {
-    color: $primary-color;
   }
 }
 
